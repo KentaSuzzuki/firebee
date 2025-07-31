@@ -1,0 +1,20 @@
+.max-width {
+    max-width: 1242px;
+}
+
+.promo-bar-cover{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: #47192f;
+}
+
+.promo-bar-cover p {
+    font-family: Metropolis;
+    font-weight: 400;
+    font-style: Light;
+    font-size: 15px;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}

@@ -1,0 +1,50 @@
+<div class="promo-bar-cover">
+    <div class="wrapper max-width">
+        <div class="item">
+            <p>{{ section.settings.shopping_info }}</p>
+        </div>
+        <div class="item">
+            <p>{{ section.settings.money_back }}</p>
+        </div>
+        <div class="item">
+            <p>{{ section.settings.safe_secret }}</p>
+        </div>
+        <div class="item">
+            <p>{{ section.settings.custome_support }}</p>
+        </div>
+    </div>
+</div>
+
+{%  schema  %}
+    {
+        "name": "Promo Bar",
+        "tag": "section",
+        "class": "promo-bar",
+        "settings": [
+            {
+                "type": "text",
+                "id": "shopping_info",
+                "label": "Shopping Info",
+                "default": "Free shipping on orders over $50"
+            },
+            {
+                "type": "text",
+                "id": "money_back",
+                "label": "Money Back",
+                "default": "30 Day Money Back Guarantee"
+            },
+            {
+                "type": "text",
+                "id": "safe_secret",
+                "label": "Safe Secret",
+                "default": "Safe & secure checkout"
+            },
+            {
+                "type": "text",
+                "id": "custome_support",
+                "label": "Custom Support",
+                "default": "Fast customer support"
+            }
+        ]
+    }
+{% endschema %}
