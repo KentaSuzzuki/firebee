@@ -1,18 +1,30 @@
 {{ 'custom.css' |  asset_url |  stylesheet_tag }}
 
-<div class="promo-bar-cover">
-    <div class="wrapper max-width">
+<div class="promo-bar__wrapper">
+    <div class="promo-bar__cover page-width">
         <div class="item">
-            <p>{{ section.settings.shopping_info }}</p>
+            <p>
+                {{ section.settings.icon_shopping_info |  image_url: width: 24, height: 24 |  image_tag }}    
+                {{ section.settings.shopping_info }}
+            </p>
         </div>
         <div class="item">
-            <p>{{ section.settings.money_back }}</p>
+            <p>
+                {{ section.settings.icon_money_back |  image_url: width: 24, height: 24 |  image_tag }}    
+                {{ section.settings.money_back }}
+            </p>
         </div>
         <div class="item">
-            <p>{{ section.settings.safe_secret }}</p>
+            <p>
+                {{ section.settings.icon_safe_secret |  image_url: width: 24, height: 24 |  image_tag }}    
+                {{ section.settings.safe_secret }}
+            </p>
         </div>
         <div class="item">
-            <p>{{ section.settings.custome_support }}</p>
+            <p>
+                {{ section.settings.icon_custom_support |  image_url: width: 24, height: 24 |  image_tag }}
+                {{ section.settings.custom_support }}
+            </p>
         </div>
     </div>
 </div>
@@ -30,10 +42,20 @@
                 "default": "Free shipping on orders over $50"
             },
             {
+                "type": "image_picker",
+                "id": "icon_shopping_info",
+                "label": "Icon Shopping Info"
+            },
+            {
                 "type": "text",
                 "id": "money_back",
                 "label": "Money Back",
                 "default": "30 Day Money Back Guarantee"
+            },
+             {
+                "type": "image_picker",
+                "id": "icon_money_back",
+                "label": "Icon Money Back"
             },
             {
                 "type": "text",
@@ -41,11 +63,21 @@
                 "label": "Safe Secret",
                 "default": "Safe & secure checkout"
             },
+             {
+                "type": "image_picker",
+                "id": "icon_safe_secret",
+                "label": "Icon Safe Secret"
+            },
             {
                 "type": "text",
-                "id": "custome_support",
+                "id": "custom_support",
                 "label": "Custom Support",
                 "default": "Fast customer support"
+            },
+             {
+                "type": "image_picker",
+                "id": "icon_custom_support",
+                "label": "Icon Custom Support"
             }
         ],
         "presets": [

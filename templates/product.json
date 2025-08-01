@@ -9,6 +9,20 @@
  */
 {
   "sections": {
+    "promo_bar_hMQHeH": {
+      "type": "promo-bar",
+      "name": "Promo Bar",
+      "settings": {
+        "shopping_info": "Free shipping on orders over $50",
+        "icon_shopping_info": "shopify://shop_images/shipping-fast_11659947_1.svg",
+        "money_back": "30 Day Money Back Guarantee",
+        "icon_money_back": "shopify://shop_images/money-back_5891307_1.svg",
+        "safe_secret": "Safe & secure checkout",
+        "icon_safe_secret": "shopify://shop_images/safety_4175280_4.svg",
+        "custom_support": "Fast customer support",
+        "icon_custom_support": "shopify://shop_images/Group_7e8edaa7-25a8-4e44-b28c-b1beb8b91259.svg"
+      }
+    },
     "main": {
       "type": "main-product",
       "blocks": {
@@ -99,10 +113,126 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
+    },
+    "as_seen_on_rxjXLL": {
+      "type": "as-seen-on",
+      "blocks": {
+        "image_ghcCKH": {
+          "type": "image",
+          "settings": {
+            "as_seen_on": "shopify://shop_images/f2efbc3bb9f2c8e641808b30a1c45d8c_1.png"
+          }
+        },
+        "image_pxdmpc": {
+          "type": "image",
+          "settings": {
+            "as_seen_on": "shopify://shop_images/2560px-The_Hollywood_Reporter_logo.svg__1.png"
+          }
+        },
+        "image_jXaUkV": {
+          "type": "image",
+          "settings": {
+            "as_seen_on": "shopify://shop_images/Vector_1.png"
+          }
+        },
+        "image_twVw8K": {
+          "type": "image",
+          "settings": {
+            "as_seen_on": "shopify://shop_images/Path_2781.png"
+          }
+        },
+        "image_L7t7nY": {
+          "type": "image",
+          "settings": {
+            "as_seen_on": "shopify://shop_images/e-news-logo-557C0D46E9-seeklogo.com_1.png"
+          }
+        },
+        "image_6UFQTe": {
+          "type": "image",
+          "settings": {
+            "as_seen_on": "shopify://shop_images/star-magazine-logo-0D6324EC0D-seeklogo.com_1.png"
+          }
+        },
+        "image_BP34rG": {
+          "type": "image",
+          "settings": {
+            "as_seen_on": "shopify://shop_images/Vector.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_ghcCKH",
+        "image_pxdmpc",
+        "image_jXaUkV",
+        "image_twVw8K",
+        "image_L7t7nY",
+        "image_6UFQTe",
+        "image_BP34rG"
+      ],
+      "name": "As Seen On",
+      "settings": {
+        "text": "As seen on"
+      }
+    },
+    "benefit_wBURmA": {
+      "type": "benefit",
+      "blocks": {
+        "benefit_kEzJnp": {
+          "type": "benefit",
+          "settings": {
+            "title": "Enhances Focus & Clarity",
+            "description": "Enhances your focus and concentration with Acetyl-L-carnitine and curcumin. Boost brain energy by up to 9% with MCT oil."
+          }
+        },
+        "benefit_gDattL": {
+          "type": "benefit",
+          "settings": {
+            "title": "Mood & Energy",
+            "description": "Enhances your focus and concentration with Acetyl-L-carnitine and curcumin. Boost brain energy by up to 9% with MCT oil."
+          }
+        },
+        "benefit_8bLLgC": {
+          "type": "benefit",
+          "settings": {
+            "title": "Brain Health",
+            "description": "Enhances your focus and concentration with Acetyl-L-carnitine and curcumin. Boost brain energy by up to 9% with MCT oil."
+          }
+        },
+        "benefit_q6Gb7B": {
+          "type": "benefit",
+          "settings": {
+            "title": "Beauty & Wellness",
+            "description": "Enhances your focus and concentration with Acetyl-L-carnitine and curcumin. Boost brain energy by up to 9% with MCT oil."
+          }
+        },
+        "benefit_eQWPGq": {
+          "type": "benefit",
+          "settings": {
+            "title": "Overall Wellness",
+            "description": "Enhances your focus and concentration with Acetyl-L-carnitine and curcumin. Boost brain energy by up to 9% with MCT oil."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_kEzJnp",
+        "benefit_gDattL",
+        "benefit_8bLLgC",
+        "benefit_q6Gb7B",
+        "benefit_eQWPGq"
+      ],
+      "name": "benefit",
+      "settings": {
+        "advert_image": "shopify://shop_images/Rectangle_9797.jpg",
+        "title": "Daily support for long term brain health",
+        "description": "Formulated to enhance focus, uplift mood, and support overall wellness—helping your brain thrive every day."
+      }
     }
   },
   "order": [
+    "promo_bar_hMQHeH",
     "main",
-    "related-products"
+    "related-products",
+    "as_seen_on_rxjXLL",
+    "benefit_wBURmA"
   ]
 }

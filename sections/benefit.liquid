@@ -1,0 +1,85 @@
+{{ 'custom.css' | asset_url | stylesheet_tag }}
+
+<div class="benefit">
+    <div class="wrapper">
+        <div class="cover page-width">
+            <div class="info">
+                <h1>{{ section.settings.title }}</h1>
+                <p class="primary-font">{{ section.settings.description }}</p>
+                <div class="accordion">
+                    {% for block in section.blocks %}
+                        <div class="accordion-item">
+                            <div class="icon">
+                                {{ block.settings.icon |  image_url: width: 120 |  image_tag }}
+                            </div>
+                            <div class="content">
+                                <b class="primary-font">{{ block.settings.title }}</b>
+                                <p class="primary-font">{{ block.settings.description }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="media">
+                {{ section.settings.advert_image |  image_url: width: 1200 |  image_tag }}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "benefit",
+    "tag": "section",
+    "class": "benefit",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "advert_image",
+            "label": "Advert Image"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Daily support for long term brain health"
+        },
+        {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description",
+            "default": "Formulated to enhance focus, uplift mood, and support overall wellness—helping your brain thrive every day."
+        }
+    ],
+    "blocks": [
+        {
+            "type": "benefit",
+            "name": "Benefit item",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "image_picker",
+                    "id": "icon",
+                    "label": "Icon"
+                },
+                {
+                    "type": "textarea",
+                    "id": "description",
+                    "label": "Description"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "benefit",
+        "settings": {
+        }
+      }
+    ]
+  }
+{% endschema %}

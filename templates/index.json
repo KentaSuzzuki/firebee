@@ -14,82 +14,59 @@
       "name": "Promo Bar",
       "settings": {
         "shopping_info": "Free shipping on orders over $50",
+        "icon_shopping_info": "shopify://shop_images/shipping-fast_11659947_1.svg",
         "money_back": "30 Day Money Back Guarantee",
+        "icon_money_back": "shopify://shop_images/money-back_5891307_1.svg",
         "safe_secret": "Safe & secure checkout",
-        "custome_support": "Fast customer support"
+        "icon_safe_secret": "shopify://shop_images/safety_4175280_4.svg",
+        "custom_support": "Fast customer support",
+        "icon_custom_support": "shopify://shop_images/Group_7e8edaa7-25a8-4e44-b28c-b1beb8b91259.svg"
       }
     },
-    "image_banner": {
-      "type": "image-banner",
+    "collection_list_nkLQ6T": {
+      "type": "collection-list",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "featured_collection_gb4T8R": {
+          "type": "featured_collection",
           "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
+            "collection": "undergarment"
           }
         },
-        "button": {
-          "type": "buttons",
+        "featured_collection_E7FwqJ": {
+          "type": "featured_collection",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "collection": "collection-1"
+          }
+        },
+        "featured_collection_TM34rM": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "collectin-2"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "featured_collection_gb4T8R",
+        "featured_collection_E7FwqJ",
+        "featured_collection_TM34rM"
       ],
+      "name": "t:sections.collection-list.presets.name",
       "settings": {
-        "image_overlay_opacity": 40,
-        "image_height": "large",
-        "image_behavior": "none",
-        "desktop_content_position": "bottom-center",
-        "desktop_content_alignment": "center",
-        "show_text_box": false,
-        "color_scheme": "scheme-3",
-        "stack_images_on_mobile": false,
-        "mobile_content_alignment": "center",
-        "show_text_below": false
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "collection": "all",
-        "products_to_show": 8,
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "columns_desktop": 4,
-        "enable_desktop_slider": false,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "color_scheme": "scheme-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "quick_add": "none",
-        "columns_mobile": "2",
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 44,
+        "padding_top": 36,
         "padding_bottom": 36
       }
     }
   },
   "order": [
     "promo_bar_tmNftq",
-    "image_banner",
-    "featured_collection"
+    "collection_list_nkLQ6T"
   ]
 }

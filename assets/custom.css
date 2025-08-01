@@ -1,20 +1,104 @@
-.max-width {
-    max-width: 1242px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.promo-bar-cover{
-    display: grid;
-    grid-template-columns: auto auto auto auto;
+.primary-font {
+    font-family: "Metropolis";
+    font-weight: 400;
+    font-style: Light;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+
+.promo-bar__wrapper {
+    width: 100%;
     background-color: #47192f;
 }
 
-.promo-bar-cover p {
-    font-family: Metropolis;
+.promo-bar__cover {
+    display: flex;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.promo-bar__wrapper .item {
+    flex: 1;
+}
+
+.promo-bar__wrapper p {
+    font-family: "Metropolis";
     font-weight: 400;
     font-style: Light;
     font-size: 15px;
     line-height: 26px;
     letter-spacing: 0%;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #ffffff;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.benefit {
+}
+
+.benefit .wrapper {
+}
+
+.benefit .cover {
+    display: flex;
+}
+
+.benefit .info {
+    width: 50%;
+}
+
+.benefit .info h1 {
+    font-family: "Playfair Display";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 50px;
+    line-height: 122%;
+    letter-spacing: 0%;
+    color: #1e3f40;
+}
+
+.benefit .info p {
+    font-family: "Metropolis";
+    font-weight: 400;
+    font-style: Light;
+    font-size: 24px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #3a3a3a;
+}
+
+.benefit .media {
+    width: 50%;
+}
+
+.benefit .media img {
+    width: 100%;
+    display: block;
+}
+
+.benefit .accordion b {
+    font-family: "Metropolis";
+    font-weight: 600;
+    font-style: Bold;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: 0%;
+}
+
+.benefit .accordion p {
+    font-size: 18px;
+}
+
+.benefit .accordion-item {
+    display: flex;
 }

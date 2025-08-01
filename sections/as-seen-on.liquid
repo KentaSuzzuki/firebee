@@ -1,0 +1,92 @@
+{%  style  %} 
+    .as-seen-on-wrapper {
+        padding: 20px;
+        background: #F5F4ED;
+    }
+
+    .as-seen-on-cover {
+        padding-top: 34px;
+        padding-bottom: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
+
+    .as-seen-on-wrapper .text p {
+        font-family: "Metropolis";
+        font-weight: 400;
+        font-style: Light;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0%;
+    }
+
+    .as-seen-on-wrapper .seen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 6%;
+        height: 35px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    .as-seen-on-wrapper .seen img {
+        height: 100%;
+        object-fit: contain; 
+    }
+
+    @media only screen and (min-width: 768px) {
+
+    }
+{% endstyle %}
+
+<div class="as-seen-on-wrapper">
+    <div class="as-seen-on-cover">
+        <div class="text">
+            <p>{{ section.settings.text }}</p>
+        </div>
+        <div class="seen">
+            {% for block in section.blocks %}
+                {{ block.settings.as_seen_on |  image_url: width: 100 |  image_tag }}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+  {
+    "name": "As Seen On",
+    "tag": "section",
+    "class": "as-seen-on",
+    "settings": [
+        {
+            "type": "text",
+            "id": "text",
+            "label": "Text",
+            "default": "As seen on"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "image",
+            "name": "as-seen-on",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "as_seen_on",
+                    "label": "As Seen On"
+                }
+            ]
+        }
+    ],
+    "presets": [
+      {
+        "name": "As Seen On",
+        "settings": {
+        }
+      }
+    ]
+  }
+{% endschema %}
