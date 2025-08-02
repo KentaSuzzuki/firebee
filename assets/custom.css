@@ -44,9 +44,11 @@
 }
 
 .benefit {
+    padding-top: 83px;
+    padding-bottom: 80px;
 }
 
-.benefit .wrapper {
+.benefit-wrapper {
 }
 
 .benefit .cover {
@@ -55,6 +57,7 @@
 
 .benefit .info {
     width: 50%;
+    padding-right: 8%;
 }
 
 .benefit .info h1 {
@@ -65,6 +68,7 @@
     line-height: 122%;
     letter-spacing: 0%;
     color: #1e3f40;
+    padding-bottom: 20px;
 }
 
 .benefit .info p {
@@ -77,6 +81,10 @@
     color: #3a3a3a;
 }
 
+.benefit .info > p {
+    padding-bottom: 25px;
+}
+
 .benefit .media {
     width: 50%;
 }
@@ -86,7 +94,7 @@
     display: block;
 }
 
-.benefit .accordion b {
+.benefit .benefit-accordion b {
     font-family: "Metropolis";
     font-weight: 600;
     font-style: Bold;
@@ -95,10 +103,72 @@
     letter-spacing: 0%;
 }
 
-.benefit .accordion p {
+.benefit .benefit-accordion p {
     font-size: 18px;
 }
 
 .benefit .accordion-item {
     display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #f5f4ed;
+    border-left: 3px solid #B9644C;
+}
+
+.benefit .accordion-item .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefit .accordion-item img {
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+}
+
+.benefit .accordion-item .content {
+    width: 100%;
+}
+
+.benefit .accordion-item .heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.benefit .accordion-item .description {
+    display: none;
+}
+
+.benefit .accordion-item span {
+    color: #b9644c;
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+.benefit .accordion-item .plus {
+    display: inline-block;
+}
+
+.benefit .accordion-item .minus {
+    display: none;
+}
+
+.benefit .accordion-item.active .plus {
+    display: none;
+}
+
+.benefit .accordion-item.active .minus {
+    display: inline-block;
+}
+
+.benefit .accordion-item.active .description {
+    display: block;
+}
+
+.benefit .accordion-item.active img {
+    width: 80px;
+    height: 80px;
 }

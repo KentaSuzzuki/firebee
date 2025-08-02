@@ -1,31 +1,35 @@
 {{ 'custom.css' | asset_url | stylesheet_tag }}
 
-<div class="benefit">
-    <div class="wrapper">
-        <div class="cover page-width">
-            <div class="info">
-                <h1>{{ section.settings.title }}</h1>
-                <p class="primary-font">{{ section.settings.description }}</p>
-                <div class="accordion">
-                    {% for block in section.blocks %}
-                        <div class="accordion-item">
-                            <div class="icon">
-                                {{ block.settings.icon |  image_url: width: 120 |  image_tag }}
-                            </div>
-                            <div class="content">
-                                <b class="primary-font">{{ block.settings.title }}</b>
-                                <p class="primary-font">{{ block.settings.description }}</p>
-                            </div>
+<div class="benefit-wrapper">
+    <div class="cover page-width">
+        <div class="info">
+            <h1>{{ section.settings.title }}</h1>
+            <p class="primary-font">{{ section.settings.description }}</p>
+            <div class="benefit-accordion">
+                {% for block in section.blocks %}
+                    <div class="accordion-item {% if forloop.first %}active{% endif %}" onclick="toggleAccordion(this)">
+                        <div class="icon">
+                            {{ block.settings.icon |  image_url: width: 120 |  image_tag }}
                         </div>
-                    {% endfor %}
-                </div>
+                        <div class="content">
+                            <div class="heading">
+                                <b class="primary-font">{{ block.settings.title }}</b>
+                                <span class="minus">-</span>
+                                <span class="plus">+</span>
+                            </div>
+                            <p class="primary-font description">{{ block.settings.description }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
-            <div class="media">
-                {{ section.settings.advert_image |  image_url: width: 1200 |  image_tag }}
-            </div>
+        </div>
+        <div class="media">
+            {{ section.settings.advert_image |  image_url: width: 1200 |  image_tag }}
         </div>
     </div>
 </div>
+
+<script src="{{ "custom.js" | asset_url }}" defer></script>
 
 {% schema %}
   {

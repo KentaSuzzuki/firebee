@@ -8,23 +8,21 @@
         padding-top: 34px;
         padding-bottom: 42px;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 10%;
     }
 
     .as-seen-on-wrapper .text p {
         font-family: "Metropolis";
         font-weight: 400;
-        font-style: Light;
         font-size: 18px;
         line-height: 26px;
-        letter-spacing: 0%;
+        letter-spacing: 0;
     }
 
     .as-seen-on-wrapper .seen {
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         gap: 6%;
         height: 35px;
@@ -43,7 +41,7 @@
 {% endstyle %}
 
 <div class="as-seen-on-wrapper">
-    <div class="as-seen-on-cover">
+    <div class="as-seen-on-cover page-width">
         <div class="text">
             <p>{{ section.settings.text }}</p>
         </div>
